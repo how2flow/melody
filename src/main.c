@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 #include "melody.h"
+#include "songs.h"
 
 #define PIN 3
 
@@ -13,13 +14,7 @@ int main()
 	wiringPiSetup();
 	softToneCreate(PIN);
 	while (1) {
-		Do(PIN, 4, T4);
-		Re(PIN, 4, T4);
-		Mi(PIN, 4, T4);
-		Fa(PIN, 4, T4);
-		Sol(PIN, 4, T4);
-		Ra(PIN, 4, T4);
-		Si(PIN, 4, T4);
+		test_buzzer(PIN, 4);
 	}
 
 	return 0;

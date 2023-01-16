@@ -12,6 +12,7 @@ TARGET = main # final file name.
 build_dirs = $(PWD)/build
 include_dirs = $(PWD)/include
 srcs = $(wildcard ./src/*.c)
+srcs += $(wildcard ./songs/*.c)
 objs = $(patsubst %.c, $(build_dirs)/%.o, $(srcs))
 
 # functions
