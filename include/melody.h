@@ -6,9 +6,9 @@
 #define BPM 120
 
 #define T4  (60000 / BPM)
-#define T2  (4_times * 2)
-#define T8  (4_times / 2)
-#define T16 (4_times / 4)
+#define T2  (T4 * 2)
+#define T8  (T4 / 2)
+#define T16 (T4 / 4)
 
 void Do(int pin, int octave, int times);
 void Do_(int pin, int octave, int times);
